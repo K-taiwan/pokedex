@@ -1,8 +1,10 @@
 //--------------------------------SETUP
+// external modules
 const express = require('express');
 const bodyParser = require('body-parser');
+// internal modules
 const db = require("./models");
-
+// instanced module
 const app = express();
 
 //--------------------------------MIDDLEWARE
