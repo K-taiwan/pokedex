@@ -10,7 +10,7 @@
 | POST  | /api/v1/pokemon/ | Will revieve Json and create a pokemon. |
 | PUT  | /api/v1/pokemon/:id  | Will recieve Json and update a pokemon by its id. |
 | DELETE  | /api/v1/pokemon/:id  | Will remove a pokemon by its id. |
-| GET  | /api/v1/trainer | Will respond with a Json of all trainer. |
+| GET  | /api/v1/trainer | Will respond with a Json of all trainers. |
 | GET  | /api/v1/trainer/:id  | Will respond with a Json of a specific trainer with the given id. |
 | POST  | /api/v1/trainer/ | Will revieve Json and create a trainer. |
 | PUT  | /api/v1/trainer/:id  | Will recieve Json and update a trainer by its id. |
