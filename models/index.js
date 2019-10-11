@@ -12,5 +12,6 @@ mongoose.connect(DB_URL, {
 
 module.exports = {
   Pokemon: require('./Pokemon'),
-  Trainer: require('./Trainer')
+  Trainer: require('./Trainer'),
+  Badge: require('./Badge')
 };
