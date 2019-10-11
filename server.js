@@ -4,7 +4,6 @@ const express = require('express');
 const bodyParser = require('body-parser');
 // internal modules
 const db = require("./models");
-console.log(db.Pokemon.find);
 // instanced module
 const app = express();
 
@@ -19,7 +18,7 @@ const PORT = process.env.PORT || 3000;
 
 // ------------------------------ROUTES
 
-// View Routes
+//SECTION  View Routes
 app.get('/',  (req, res) => {
   // const file = `${__dirname}/views/index.html`
   res.sendFile('views/index.html' , { root : __dirname});
@@ -41,7 +40,7 @@ app.get('/api/v1', (req,res) =>{
   });
 });
 
-// Pokemon Routes
+//SECTION  Pokemon Routes
 
 // Index route
 app.get('/api/v1/pokemon', (req,res)=>{
@@ -68,9 +67,10 @@ app.get('/api/v1/pokemon/:name', (req,res)=>{
   });
 });
 
+//TODO get all trainers that have a specific Pokemon
+
 // Create route
 app.post('/api/v1/pokemon', (req,res)=>{
-  console.log(req.body);
   db.Pokemon.create(req.body, (error, createdPokemon)=>{
     if (error) return console.log(error);
     res.json({
@@ -81,7 +81,7 @@ app.post('/api/v1/pokemon', (req,res)=>{
   });
 });
 
-// Trainer Routes
+//SECTION  Trainer Routes
 
 // Index Route
 app.get('/api/v1/trainers', (req,res)=>{
@@ -98,9 +98,10 @@ app.get('/api/v1/trainers', (req,res)=>{
     })
 });
 
+//TODO Dynamic Update Route
+
 // Create Route
 app.post('/api/v1/trainers', (req,res)=>{
-  console.log(req.body);
   db.Trainer.create(req.body, (error, createdTrainer)=>{
     if (error) return console.log(error);
     res.json({
@@ -110,6 +111,8 @@ app.post('/api/v1/trainers', (req,res)=>{
     });
   });
 });
+
+//TODO get all trainers that have a specific Badge
 
 
 // ------------------------------Start Server
