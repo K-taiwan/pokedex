@@ -1,0 +1,55 @@
+{
+  "Pokemon": {
+    "5d263a45c4be048e2e2e8817": {
+      "_id": "5d263a45c4be048e2e2e8817",
+      "name": "Bulbasaur",
+      "type": "Grass",
+      "power": 20,
+      "health": 24,
+      "image": "https://static.pokemonpets.com/images/monsters-images-300-300/1-Bulbasaur.png",
+      "__v": 0
+    },
+    "5d263a45c4be048e2e2e8818": {
+      "_id": "5d263a45c4be048e2e2e8818",
+      "name": "Squirtle",
+      "type": "Water",
+      "power": 27,
+      "health": 15,
+      "image": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjcvKy-iKvjAhXiCTQIHQUdCKwQjRx6BAgBEAU&url=https%3A%2F%2Fpokemontowerdefensethree.fandom.com%2Fwiki%2FSquirtle&psig=AOvVaw06LWOkKok5MdKl8wlWbeS2&ust=1562872653097664",
+      "__v": 0
+    }
+  },
+  "Trainer": {
+    "5d27774d5cb86200815c8a64": {
+      "pokemon": {
+        "0": "5d263a45c4be048e2e2e8817",
+        "1": "5d263a45c4be048e2e2e8818"
+      },
+      "_id": "5d27774d5cb86200815c8a64",
+      "name": "Ash Ketchum",
+      "age": 57,
+      "hometown": "Pallet Town",
+      "__v": 0,
+      "badges": {
+        "0": {
+          "_id": "5d2787a2d2a6d92617f70200",
+          "name": "rainbow badge",
+          "town": "Celadon City",
+          "color": "All",
+          "gym": "Celadon City Gym",
+          "__v": 0
+        }
+      }
+    }
+  },
+  "Badge": {
+    "5d2787a2d2a6d92617f70200": {
+      "_id": "5d2787a2d2a6d92617f70200",
+      "name": "rainbow badge",
+      "town": "Celadon City",
+      "color": "All",
+      "gym": "Celadon City Gym",
+      "__v": 0
+    }
+  }
+}
